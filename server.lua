@@ -4,7 +4,7 @@
 -- whether to use ace perms
 local usePerms = false
 
--- to change what actions are diabled during peacetime see client.lua line 34
+-- to change what actions are diabled during peacetime see client.lua line 49
 -------------------
 ------- Code-------
 -------------------
