@@ -11,4 +11,6 @@ USE:
 - ????
 - profit
 
+-add `add_ace group.admin simple.pt allow` to your server.cfg and change `local usePerms = false` to `local usePerms = true` to use ACE perms.
+
 For support visit: https://discord.gg/zH3k624aSv
