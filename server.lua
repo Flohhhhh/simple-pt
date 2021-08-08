@@ -10,7 +10,7 @@ local usePerms = false
 -------------------
 GlobalState.peactime = false
 
-RegisterCommand('pt', function()
+RegisterCommand('pt', function(source)
   if not usePerms or IsPlayerAceAllowed(source, 'simple.pt') then
     if GlobalState.peacetime then
       GlobalState.peacetime = disable
