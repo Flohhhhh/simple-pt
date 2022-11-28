@@ -3,7 +3,7 @@ games { 'gta5' }
 
 author 'Floh'
 description 'Simple "peacetime" script for RP servers which disables firing and shows status.'
-version '1.0.0'
+version '1.0.1'
 
 ui_page "ui/ui.html"
 
@@ -19,4 +19,8 @@ client_scripts {
 
 server_scripts {
 	'server.lua',
+}
+
+dependencies {
+    '/onesync',  -- requires state awareness to be enabled
 }
