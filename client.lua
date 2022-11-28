@@ -1,5 +1,6 @@
 TriggerEvent('chat:addSuggestion', '/pt', 'Toggles peacetime.', {})
 
+
 RegisterNetEvent('pt:enabled')
 AddEventHandler('pt:enabled', function()
   TriggerEvent('chat:addMessage', {
@@ -30,6 +31,11 @@ local sleep = 0
 local ped = PlayerPedId()
 
 CreateThread( function()
+	Wait(500)
+	print("Peacetime: ".. tostring(GlobalState.peacetime))
+	if GlobalState.peacetime == true then
+		TriggerEvent('pt:enabled')
+	end
   while true do Wait(sleep)
     if GlobalState.peacetime == true then
       sleep = 0
@@ -41,6 +47,7 @@ CreateThread( function()
 end)
 
 CreateThread( function()
+
   while true do Wait(1000)
     ped = PlayerPedId()
   end
@@ -61,3 +68,4 @@ function disableControls()
   DisableControlAction(0, 264, true) -- melee
   DisableControlAction(0, 257, true) -- melee
 end
+

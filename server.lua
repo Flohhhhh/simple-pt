@@ -8,16 +8,18 @@ local usePerms = false
 -------------------
 ------- Code-------
 -------------------
-GlobalState.peactime = false
+if not GlobalState.peacetime then
+	GlobalState.peacetime = false
+end
 
 RegisterCommand('pt', function(source)
-  if not usePerms or IsPlayerAceAllowed(source, 'simple.pt') then
-    if GlobalState.peacetime then
-      GlobalState.peacetime = disable
-      TriggerClientEvent('pt:disabled', -1)
-    else
-      GlobalState.peacetime = true
-      TriggerClientEvent('pt:enabled', -1)
+    if not usePerms or IsPlayerAceAllowed(source, 'simple.pt') then
+        if GlobalState.peacetime then
+        GlobalState.peacetime = false
+        TriggerClientEvent('pt:disabled', -1)
+        else
+        GlobalState.peacetime = true
+        TriggerClientEvent('pt:enabled', -1)
+        end
     end
-  end
 end, false)
