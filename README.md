@@ -1,4 +1,4 @@
-# simple_pt
+# simple-pt
 Simple "peacetime" script for FiveM RP servers which disables firing and shows status.
 
 INSTALLATION:
