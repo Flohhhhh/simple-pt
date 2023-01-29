@@ -3,7 +3,7 @@ Simple "peacetime" script for FiveM RP servers which disables firing and shows s
 
 INSTALLATION:
 - drag simple_pt folder into your resources folder
-- add "ensure simple_pt" to your server.cfg
+- add "ensure simple-pt" to your server.cfg
 
 USE: 
 - type '/pt' in chat to toggle pt
