@@ -2,7 +2,7 @@
 Simple "peacetime" script for FiveM RP servers which disables firing and shows status.
 
 INSTALLATION:
-- drag simple_pt folder into your resources folder
+- drag simple-pt folder into your resources folder
 - add "ensure simple-pt" to your server.cfg
 
 USE: 
